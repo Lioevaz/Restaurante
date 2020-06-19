@@ -20,7 +20,7 @@
     </header>
 
     <!--Comienza NavBar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-top border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-top border-bottom sticky-top">
         <div class="container">
             <div class="navbar-brand">
     
@@ -50,9 +50,6 @@
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item lead" href="#">Something else here</a>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled lead" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li>
                     <li class="nav-item"><a href="#" class="nav-link lead">
                             <i class="fab fa-instagram"></i>
@@ -100,10 +97,13 @@
                         </a>
                       </div>
 
-                </div>
+                    </div>
+                  
             </div>
+            <!--Termina Carousel-->
+
             <div class="row">
-                <div class="col-12">
+                <div class="col-12"> <!--Comienza las Card Columns-->
                     <div class="card-columns">
                         <div class="card">
                           <img src="img/comida.jpg" class="card-img-top " alt="...">
@@ -148,8 +148,8 @@
                         <div class="card">
                             <img src="img/comida5.jpg" class="card-img-top " alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Card title that wraps to a new line</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <h5 class="card-title">Papas fritas con cheddar y panceta!</h5>
+                              <p class="card-text">Veni proba nuestras increibles papas fritas con cheddar y panceta .</p>
                             </div>
                           </div>
 
@@ -170,9 +170,68 @@
                           </div>
                      </div>
                 </div>
+            </div>  <!--Termina las Card Columns-->
+
+            <div class="div-row">
+                <div class="col-12 mt-4">
+                    <!--Comienza JumpBotron-->
+               <div class="jumbotron">
+                   <h1 class="display-4">Si es tu cumpleaños tu comida sale gratis.</h1>
+                   <p class="lead">Aprovecha esta increible promo que tenemos para vos!</p>
+                   <hr class="my-4">
+                   <p>Ponte en contacto con nosotros </p>
+                   <a class="btn btn-primary btn-lg" href="#" role="button">Agenda una cita</a>
+                 </div>
+                 <!--Comienza JumpBotron-->
+
+                </div>
             </div>
         </div>
-        <!--Termina Carousel-->
+        <style>
+          .formulario{
+            background: url('img/form.jpg');
+            background-size: cover;
+          
+          }
+          .fondo-blanco{
+            background-color: rgba(255, 255, 255, .50);
+          }
+        </style>
+
+        <div class="formulario">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center p-4">
+                        <h3 class="display-4 text-white">Contactanos!</h3>
+                    </div>
+                    <div class="col-12 col-md-8 offset-md-2 fondo-blanco rounded p-5">
+                    <form action="">
+                      <div class="form-group">
+                        <label for="nombre" class="text-black lead">Nombre</label>
+                        <input type="text" class="form-control shadow-sm">
+
+                        <label for="nombre" class="text-black lead">Apellido</label>
+                        <input type="text" class="form-control shadow-sm">
+
+                        <label for="nombre" class="text-black lead">Correo</label>
+                        <input type="text" class="form-control shadow-sm">
+                      </div>
+                      <div class="form-group">
+                        <label for="Mensaje">Mensaje</label>
+                        <textarea name="" id="textarea" cols="30" rows="10" class="form-control"></textarea>
+                      </div>
+                      <div class="from-group">
+                        <button class="btn btn-secondary btn-block">Enviar</button>
+                      </div>
+                    </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+
+       
     </main>
 
 
